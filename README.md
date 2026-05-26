@@ -1,3 +1,19 @@
+# Montando o Mistério 
+
+Para configurar a base de dados do mistério, copie o repositório, e rode os seguintes comandos:
+
+```
+psql
+create schema mystery;
+set search_path = mystery;
+\i AirBNB_create_tables.sql;
+\i AirBNB_insert_tables.sql;
+```
+
+A partir da pista inicial, explore a base de dados para resolver o crime! 
+
+![Modelo Lógico](modelo_logico.jpeg)
+
 # Pista Inicial
 
 Herbert Rodrigues, um joalheiro muito rico e famoso, foi encontrado morto em Pintópolis-MG. Conhecidos da vítima alegaram que o homem teria viajado para a cidade em busca de pedras preciosas para serem utilizadas na confecção de um anel de noivado para o Vini Jr., que iria não só tentar voltar com a Virgínia, mas também pedi-la em casamento. Isso foi confirmado pelo depoimento de uma vendedora de joias, que afirmou ter entregado em mãos para a vítima aproximadamente R$ 1.000.000 em diamantes na manhã do dia 08/05. Essa foi a última vez que a vítima foi vista, e a autópsia confirmou a causa mortis como morte matada.
